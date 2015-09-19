@@ -5,4 +5,7 @@ describe('sing', function() {
   it("correctly sings with one bottle left", function() {
     expect(sing("juice", 1)).to.equal("1 bottle of juice on the wall, 1 bottle of juice. Take one down, pass it around no more bottles of juice on the wall. ");
   })
+  it("sings with more than one bottle left", function() {
+    expect(sing("coffee", 4)).to.equal("4 bottles of coffee on the wall, 4 bottles of coffee. Take one down, pass it around 3 bottles of coffee on the wall. ");
+  })
 });

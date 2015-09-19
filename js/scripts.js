@@ -4,9 +4,9 @@ var sing = function(drink, numberOfBottles) {
     return result;
   } else if(numberOfBottles === 1) {
     var result = numberOfBottles + " bottle of " + drink + " on the wall, " + numberOfBottles + " bottle of " + drink + ". Take one down, pass it around no more bottles of " + drink + " on the wall. ";
-    console.log(result);
     return result;
   } else {
-    return "filler";
+    result =  numberOfBottles + " bottles of " + drink + " on the wall, " + numberOfBottles + " bottles of " + drink + ". Take one down, pass it around " + (numberOfBottles - 1) + " bottles of " + drink + " on the wall. ";
+    return result;
   }
 }
