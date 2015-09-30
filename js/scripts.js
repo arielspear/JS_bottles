@@ -15,12 +15,9 @@ $(document).ready(function() {
   $("form#bottles").submit(function(event) {
     var numberOfBottles = parseInt($("input#number").val());
     var drink = ($("input#drink").val());
-
     var result = sing(drink, numberOfBottles);
 
     $(".answer").html(result);
-
-
     $("#result").show();
     event.preventDefault();
   });
